@@ -12,10 +12,11 @@ function App() {
     let totPercent = 0;
     porl = qos.current.value * (ltp.current.value - initalPrice.current.value);
     if (porl > 0) {
-      totPercent =
+      totPercent = Math.round(
         ((ltp.current.value - initalPrice.current.value) /
           initalPrice.current.value) *
-        100;
+          100
+      );
       setMessage(
         "Hey 😊, Profit is " +
           porl +
@@ -24,10 +25,11 @@ function App() {
           "%"
       );
     } else {
-      totPercent =
+      totPercent = Math.round(
         ((initalPrice.current.value - ltp.current.value) /
           initalPrice.current.value) *
-        100;
+          100
+      );
       setMessage(
         "Hey 🥲, Loss is " +
           porl +
