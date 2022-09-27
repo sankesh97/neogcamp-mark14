@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import "./App.css";
 
 function App() {
@@ -31,11 +31,7 @@ function App() {
           100
       );
       setMessage(
-        "Hey 🥲, Loss is " +
-          porl +
-          " and Loss Percentage is " +
-          totPercent +
-          "%"
+        "Hey 🥲, Loss is " + porl + " and Loss Percentage is " + totPercent + "%"
       );
     }
   };
